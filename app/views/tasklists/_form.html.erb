@@ -1,9 +1,9 @@
-<%= form_for(tasklist) do |f| %>
-  <% if message.errors.any? %>
+<%= form_for(tasklists) do |f| %>
+  <% if tasklists.errors.any? %>
     <div id="error_explanation">
       <ul>
-        <% message.errors.full_messages.each do |tasks| %>
-          <li><%= tasks %></li>
+        <% tasklists.errors.full_messages.each do |tasks| %>
+          <li><%= tasklists %></li>
         <% end %>
       </ul>
     </div>
