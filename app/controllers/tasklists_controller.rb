@@ -1,7 +1,7 @@
 class TasklistsController < ApplicationController
   before_action :set_tasklist,only:[:show,:edit,:update,:destroy]
   def index
-    @tasklist = Tasklist.all
+    @tasklist = Tasklist.all.page(params[:page]).per(3)
   end
 
   def show
