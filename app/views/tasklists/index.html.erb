@@ -10,11 +10,11 @@
       </tr>
     </thead>
     <tbody>
-      <% @tasklist.each do |tasklist| %>
+      <% @tasklist.each do |task| %>
         <tr>
-          <td><%= link_to tasklist.id,tasklist %></td>
-          <td><%= tasklist.content %></td>
-          <td><%= tasklist.status %></td>
+          <td><%= link_to task.id,task %></td>
+          <td><%= task.content %></td>
+          <td><%= task.status %></td>
         </tr>
       <% end %>
     </tbody>
